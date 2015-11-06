@@ -46,11 +46,16 @@ namespace SomePOOPractice
                 Console.WriteLine(user.ToString());
             }
 
-            int option = ShowMenu();
             TimeSpan userAge = DateTime.Now.Subtract(user.FechaNacimiento);
-            ShowResults(userAge, option);
 
-            Console.WriteLine("Gracias por usar la aplicación!");
+            int option;
+            do
+            {
+                option = ShowMenu();
+                ShowResults(userAge, option);
+            } while (option != 5);
+
+            Console.WriteLine($"Vuelve pronto!");
             Console.WriteLine("Fecha actual: " + DateTime.Now);
             Console.WriteLine("ENTER para salir...");
             Console.ReadLine();
@@ -153,6 +158,9 @@ namespace SomePOOPractice
                 case 4:
                     Console.WriteLine($"Has vivido aproximadamente {userAge.TotalSeconds} segundos");
                     break;
+                case 5:
+                    Console.WriteLine("Gracias por usar la aplicación!");
+                    break;
                 default:
                     Console.WriteLine("No ingresaste una opción válida :/.");
                     break;
@@ -165,6 +173,7 @@ namespace SomePOOPractice
             Console.WriteLine("2. ¿Cuántos días he vivido?");
             Console.WriteLine("3. ¿Cuántas horas he vivido?");
             Console.WriteLine("4. ¿Cuántos segundos he vivido?");
+            Console.WriteLine("5. SALIR");
             try
             {
                 return Int32.Parse(Console.ReadLine());
@@ -172,7 +181,7 @@ namespace SomePOOPractice
             catch
             {
                 Console.WriteLine("Uy! No puedo leer esto.");
-                return 0;
+                return 5;
             }
         }
     }

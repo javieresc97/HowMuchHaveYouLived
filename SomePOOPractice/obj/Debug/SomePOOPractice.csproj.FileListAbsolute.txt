@@ -1,0 +1,6 @@
+c:\users\javier\documents\visual studio 2015\Projects\SomePOOPractice\SomePOOPractice\bin\Debug\SomePOOPractice.exe.config
+c:\users\javier\documents\visual studio 2015\Projects\SomePOOPractice\SomePOOPractice\bin\Debug\SomePOOPractice.exe
+c:\users\javier\documents\visual studio 2015\Projects\SomePOOPractice\SomePOOPractice\bin\Debug\SomePOOPractice.pdb
+c:\users\javier\documents\visual studio 2015\Projects\SomePOOPractice\SomePOOPractice\obj\Debug\SomePOOPractice.csprojResolveAssemblyReference.cache
+c:\users\javier\documents\visual studio 2015\Projects\SomePOOPractice\SomePOOPractice\obj\Debug\SomePOOPractice.exe
+c:\users\javier\documents\visual studio 2015\Projects\SomePOOPractice\SomePOOPractice\obj\Debug\SomePOOPractice.pdb
